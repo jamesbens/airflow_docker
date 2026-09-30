@@ -5,6 +5,12 @@ Prerequisites:
 2. Install Docker Desktop version 3.3.2 locally.
 Goto https://docs.docker.com/compose/
 https://docs.docker.com/desktop/setup/install/windows-install/
+
+Once installed Goto Settings->Resources->WSL Integration
+check Enable integration with my default WSL distro
+Also enable integration with additional distros
+
+
 3. Create a the c:\airflow-docker folder
 under this folder, create 3 folders: config, dags, logs
 4. download the latest docker-compose.yaml 3.3.2 version into the airflow-docker folder
@@ -47,3 +53,6 @@ docker ps
 docker compose --env-file .env ps -a
 docker compose --env-file .env logs --tail=100 airflow-init
 docker compose --env-file .env logs --tail=100 airflow-apiserver
+
+10. Things to remember when working with Docker locally.
+wsl
