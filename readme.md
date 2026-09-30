@@ -54,5 +54,4 @@ docker compose --env-file .env ps -a
 docker compose --env-file .env logs --tail=100 airflow-init
 docker compose --env-file .env logs --tail=100 airflow-apiserver
 
-10. Things to remember when working with Docker locally.
-wsl
+10. Open your browser and navigate to http://localhost:8080 - this will open the Airflow webserver.
